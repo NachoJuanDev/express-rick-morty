@@ -1,6 +1,6 @@
 const _processResponse = (data) => {
   if (Array.isArray(data) || (typeof (data) === 'object' && data !== null)) return data
-  if (data !== undefined && data !== null) return { message: data }
+  if (data !== undefined && data !== null) return { msg: data }
   return undefined
 }
 
